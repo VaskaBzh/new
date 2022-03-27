@@ -1,0 +1,130 @@
+.header
+    padding: 0
+    .col
+        align-items: flex-start
+        justify-content: space-between
+    &__block
+        padding: 0.8rem 0
+        background: $dark
+        width: 100%
+        &:nth-child(1)
+            color: $light
+        &:nth-child(2)
+            background: $light
+            padding: 1.5rem 0 1rem
+        &:nth-child(3)
+            background: $secondary
+    &__info
+        max-width: 65.6%
+        width: 100%
+    .contacts
+        max-width: 23.8rem
+        width: 100%
+        &__block
+            margin-left: 36px
+            position: relative
+            height: 2.625rem
+            &::before
+                content: url(../img/phone.svg)
+                width: 24px
+                height: 24px
+                position: absolute
+                left: -36px
+                top: 50%
+                margin-top: -12px
+        &__telephone
+            text-align: left
+            position: relative
+            &:nth-child(2)
+                &::before
+                    content: url(../img/phone.svg)
+                    width: 24px
+                    height: 24px
+                    position: absolute
+                    left: -36px
+                    top: 50%
+                    margin-top: -12px
+        &__messager
+            color: $darkGrey
+            line-height: 0.75rem
+            font-size: 0.75rem
+    .information
+        max-width: 25.8125rem
+        width: 100%
+        &__el
+            line-height: 1.375rem
+            font-weight: 400
+            text-decoration: none
+            color: $light
+    .nav
+        max-width: 64.8125rem
+        width: 100%
+        &-section
+            max-width: 18.5rem
+            width: 100%
+            align-items: flex-start
+            &__el
+                color: $dark
+                font-weight: 700
+                font-size: 1.125rem
+                line-height: 1.375rem
+        &-user
+            max-width: 29.1875rem
+            width: 100%
+            align-items: flex-start
+            &__el
+                color: $dark
+                font-weight: 400
+                font-size: 1rem
+                line-height: 1.375rem
+                position: relative
+                margin-left: 40px 
+                &:nth-child(1)
+                    &::before
+                        position: absolute
+                        content: url(../img/heart.svg)
+                        width: 24px
+                        height: 24px
+                        left: -40px
+                        top: 50%
+                        margin-top: -12px
+                &:nth-child(2)
+                    &::before
+                        position: absolute
+                        content: url(../img/bag.svg)
+                        width: 24px
+                        height: 24px
+                        left: -40px
+                        top: 50%
+                        margin-top: -12px
+                    &::after
+                        position: absolute
+                        top: -13px
+                        left: -27px
+                        content: '20'
+                        color: $light
+                        width: 20px
+                        height: 20px
+                        background-color: $primary
+                        border-radius: 100%
+                &:nth-child(3)
+                    &::before
+                        position: absolute
+                        content: url(../img/user.svg)
+                        width: 24px
+                        height: 24px
+                        left: -40px
+                        top: 50%
+                        margin-top: -12px
+    .block__logo
+        max-width: 48.5rem
+        width: 100%
+    .lable__search
+        position: relative
+        &::before
+            content: url(../img/search.svg)
+            position: absolute
+            left: 47px
+            top: -9px
+            width: 20px
+            height: 20px

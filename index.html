@@ -4,10 +4,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css"><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="../js/swiper-bundle.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
     <title>new</title>
 </head>
 <body>
-    
+    <header class="section header">
+        <div class="col">
+            <div class="header__block">
+                <div class="container row">
+                    <div class="header__info row">
+                        <div class="contacts row">
+                            <div class="contacts__block col">
+                                <span class="contacts__telephone">8 (495) 24-00-99-1</span>
+                                <span class="contacts__messager">Telegram, Viber, Whatsapp</span>
+                            </div>
+                            <span class="contacts__telephone">8 (495) 62-00-99-1</span>
+                        </div>
+                        <div class="row information">
+                            <a href="#" class="information__el">Акции</a>
+                            <a href="#" class="information__el">Контакты</a>
+                            <a href="#" class="information__el">О нас</a>
+                            <a href="#" class="information__el">Доставка и оплата</a>
+                        </div>
+                    </div>
+                    <button class="button button-primary">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="header__block">
+                <div class="container row">
+                    <div class="nav-section row">
+                        <a href="#" class="nav-section__el">Мебель</a>
+                        <a href="#" class="nav-section__el">Интерьер</a>
+                        <a href="#" class="nav-section__el">Сад</a>
+                    </div>
+                    <div class="block__logo row">
+                        <a href="#" class="logo"><img src="../img/logo.webp" alt="logo"></a>
+                        <div class="nav-user row">
+                            <a href="#" class="nav-user__el">Избранное</a>
+                            <a href="#" class="nav-user__el">Корзина</a>
+                            <a href="#" class="nav-user__el">Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__block">
+                <div class="container row">
+                    <div class="nav row">
+                        <a href="#" class="nav__el">Мягкая мебель</a>
+                        <a href="#" class="nav__el">Для гостинной</a>
+                        <a href="#" class="nav__el">Для спальни</a>
+                        <a href="#" class="nav__el">Для детской</a>
+                        <a href="#" class="nav__el">Для прихожей</a>
+                        <a href="#" class="nav__el">Столы </a>
+                        <a href="#" class="nav__el">Стулья</a>
+                        <a href="#" class="nav__el">Кухни</a>
+                    </div>
+                    <label for="search" class="lable__search "></label>
+                    <input type="text" id="search" class="input input__search header__input" placeholder="Поиск...">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.section header -->
+    <main>
+        <section class="hero section">
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper first-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide__title col">
+                                <h1 class="slide__title__head">Мебель для гостинной</h1>
+                                <p class="slide__title__text">Мягкая мебель от производителя для вашего уюта!</p>
+                                <button class="button button-primary swiper__button">Смотреть тут</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide__title col">
+                                <h1 class="slide__title__head">Мебель для гостинной</h1>
+                                <p class="slide__title__text">Мягкая мебель от производителя для вашего уюта!</p>
+                                <button class="button button-primary swiper__button">Смотреть тут</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide__title col">
+                                <h1 class="slide__title__head">Мебель для гостинной</h1>
+                                <p class="slide__title__text">Мягкая мебель от производителя для вашего уюта!</p>
+                                <button class="button button-primary swiper__button">Смотреть тут</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide__title col">
+                                <h1 class="slide__title__head">Мебель для гостинной</h1>
+                                <p class="slide__title__text">Мягкая мебель от производителя для вашего уюта!</p>
+                                <button class="button button-primary swiper__button">Смотреть тут</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide__title col">
+                                <h1 class="slide__title__head">Мебель для гостинной</h1>
+                                <p class="slide__title__text">Мягкая мебель от производителя для вашего уюта!</p>
+                                <button class="button button-primary swiper__button">Смотреть тут</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev first-swiper-button-prev"></div>
+                    <div class="swiper-pagination first-swiper-button-pagination"></div>
+                    <div class="swiper-button-next first-swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <!-- /.hero section -->
+        <section class="tabs section">
+            <div class="container">
+                <div class="row">
+                    <div class="tabs__box">
+                        <div class="row tabs__blocks">
+                            <div class="tabs__block col">
+                                <img src="../img/chair.webp" alt="chair" class="tabs__block-img">
+                                <h3 class="tabs__block__title">Стулья</h3>
+                                <p class="tabs__block__text">Более 1 220 моделей стульев для кухни и гостиной, бара</p>
+                            </div>
+                            <div class="tabs__block col">
+                                <img src="../img/sofa-white.webp" alt="sofa-white" class="tabs__block-img">
+                                <h3 class="tabs__block__title">Спальные гарнитуры</h3>
+                                <p class="tabs__block__text">Спальни для вашего комфорта</p>
+                            </div>
+                        </div>
+                        <div class="tabs__block tabs__block-width row">
+                            <div class="col">
+                                <h3 class="tabs__block__title tabs__block__title-margin">Мебель для гостинной</h3>
+                                <p class="tabs__block__text">Уютная мебель для вашей гостинной</p>
+                            </div>
+                            <img src="../img/sofa-yellow.webp" alt="sofa-yellow" class="tabs__block-img">
+                        </div>
+                    </div>
+                    <div class="tabs__block-height col">
+                        <img src="../img/tables.webp" alt="tables" class="tabs__block-img">
+                        <h3 class="tabs__block__title tabs__block__title-top">Столы</h3>
+                        <p class="tabs__block__text tabs__block__text-width">Более 540 моделей обеденных столов по доступной цене</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.tabs section -->
+        <section class="section guid">
+            <div class="container">
+                    <h2 class="section__title">Рекомендуем</h2>
+                    <p class="section__text">Смотреть все</p>
+                    <div class="guid__block">
+                        <div class="guid__block__el guid__block-one">
+                            <p class="block__el__text">Садовая мебель</p>
+                            <span class="block__el__price">от 152 799 ₽</span>
+                        </div>
+                        <div class="guid__block__el guid__block-two">
+                            <p class="block__el__text">Стулья</p>
+                            <span class="block__el__price">от 23 650 ₽</span>
+                        </div>
+                        <div class="guid__block__el guid__block-three">
+                            <p class="block__el__text">Столы</p>
+                            <span class="block__el__price">от 39 950 ₽</span>
+                        </div>
+                        <div class="guid__block__el guid__block-four">
+                            <p class="block__el__text">Мебель для гостинной</p>
+                            <span class="block__el__price">от 234 ₽</span>
+                        </div>
+                        <div class="guid__block__el guid__block-five">
+                            <p class="block__el__text">Мягкая мебель</p>
+                            <span class="block__el__price">от 5 250 ₽</span>
+                        </div>
+                        <div class="guid__block__el guid__block-six">
+                            <p class="block__el__text">Мебель для спальни</p>
+                            <span class="block__el__price">от 980 ₽</span>
+                        </div>
+                    </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section guid -->
+        <section class="section popular">
+            <div class="container">
+                    <h2 class="section__title">Популярные товары</h2>
+                    <p class="section__text">Смотреть все</p>
+                    <div class="popular__block">
+                        <div class="popular__block__el popular__block-one">
+                            <p class="block__el__text">Кровать “Венера 1” чёрный/махагон</p>
+                            <span class="block__el__price">117 600 ₽</span>
+                        </div>
+                        <div class="popular__block__el popular__block-two">
+                            <p class="block__el__text">Кровать Лофт КМ-1.6</p>
+                            <span class="block__el__price">1 502 ₽</span>
+                        </div>
+                        <div class="popular__block__el popular__block-three">
+                            <p class="block__el__text">Стол Helis МДФ Черный</p>
+                            <span class="block__el__price">Стол Helis МДФ Черный</span>
+                        </div>
+                        <div class="popular__block__el popular__block-four">
+                            <p class="block__el__text">Дамский столик чёрный/венге</p>
+                            <span class="block__el__price">117 600 ₽</span>
+                        </div>
+                    </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section popular -->
+    </main>
 </body>
 </html>

@@ -5,13 +5,42 @@
 h1
     margin: 0
 html
-    font-size: 14px 
+    font-size: 16px 
 body
     font-family: 'ProximaNova'
     font-size: 1rem
     color: $dark
     outline: none
+    font-weight: 600
+    line-height: 1.5rem
 img
     max-width: 100% 
+a
+    text-decoration: none
+span
+    cursor: pointer
 .section
-    padding: 2.857rem 0
+    padding: 2.5rem 0
+    &__title
+        font-weight: 800
+        font-size: 2rem
+        line-height: 2.25rem
+        color: $title
+        text-align: center
+    &__text
+        color: $primary
+        text-align: center
+        margin-top: 0.8rem
+        cursor: pointer
+.input
+    font-weight: 400
+    &__search
+        padding: 0.75rem 7.0625rem 0.75rem 3.75rem
+        outline: none
+        border: 1px solid $darkGrey
+        border-radius: 2px
+        max-width: 14.375em
+        width: 100%
+        &::placeholder
+            color: $darkGrey
+            font-weight: 400
