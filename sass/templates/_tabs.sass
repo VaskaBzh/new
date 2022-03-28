@@ -1,16 +1,29 @@
 .tabs
     padding: 2.3125rem 0 2.5rem
+    &__section
+        min-height: 35rem
+        width: 100%
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr
     &__block
-        width: 49%
+        width: 100%
         min-height: 16.875rem
         background: $lightGrey
+        border-right: 1.25rem solid $light
+        border-top: 1.25rem solid $light
         &-width
-            max-width: 54.625rem
+            grid-column-start: 1
+            grid-column-end: 3
+            grid-row-start: 2
+            grid-row-end: 3
             width: 100%
             padding: 0 2.3125rem 0 5.25rem
         &-height
-            min-height: 35rem
-            max-width: 26.6875rem
+            grid-column-start: 3
+            grid-column-end: 4
+            grid-row-start: 1
+            grid-row-end: 3
             width: 100%
             background: $lightGrey
             padding: 5.75rem 0 0 0
@@ -36,10 +49,3 @@
                 max-width: 17rem
     &__blocks
         width: 100% 
-    &__box
-        max-width: 54.625rem
-        width: 100%
-        min-height: 35rem
-        display: flex
-        flex-direction: column
-        justify-content: space-between

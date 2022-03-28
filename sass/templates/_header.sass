@@ -1,5 +1,7 @@
 .header
     padding: 0
+    .row
+        flex-wrap: wrap
     .col
         align-items: flex-start
         justify-content: space-between
@@ -59,6 +61,7 @@
     .nav
         max-width: 64.8125rem
         width: 100%
+        flex-wrap: wrap
         &__el
             color: $dark
         &-section
@@ -126,10 +129,12 @@
         width: 100%
     .lable__search
         position: relative
+        width: 20px
+        height: 20px
         &::before
             content: url(../img/search.svg)
             position: absolute
-            left: 47px
-            top: -9px
+            left: 19px
+            top: -2px
             width: 20px
             height: 20px
