@@ -1,0 +1,118 @@
+.feedback
+    padding: 5rem 0
+    background: $secondary
+    .section
+        &__block
+            margin-top: 3.9rem
+        &__text
+            margin-top: 0.85rem
+    .row
+        align-items: flex-start
+    &__title
+        text-align: left
+        max-width: 13.9375rem
+    &__text
+        text-align: left
+        &::after
+            content: '(12 345)'
+            color: $primary
+            margin-left: 0.3rem
+    &-swiper
+        min-height: 20rem
+        max-width: 67.25rem
+        &__nav
+            margin: 2.75rem auto auto
+            width: 34%
+            display: flex
+        &-button
+            &-next, &-prev
+                background: rgba(21, 21, 21, 0.32)
+                border-radius: 80px
+                width: 48px
+                height: 48px
+                outline: none
+                position: relative
+            &-next
+                &::before
+                    content: url(../img/arrow.svg)
+                    transform: rotate(180deg)
+                    margin-top: -9px
+            &-prev
+                &::before
+                    content: url(../img/arrow.svg)
+                    margin-top: 5px
+    &__block
+        display: flex
+        justify-content: space-between
+        min-height: 14.75rem
+    &__slide
+        max-width: 21.625rem
+        width: 100%
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08)
+        border-radius: 2px
+        padding: 20px
+        background: $light
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        min-height: 14.75rem
+    &-name
+        font-size: 1rem
+        &-block
+            display: flex
+            justify-content: space-between
+            width: 100%
+    &-stars
+        display: flex
+        justify-content: space-between
+        max-width: 6.5rem
+        width: 100%
+        align-items: center
+        &-img
+            height: 1rem
+    &-text
+        line-height: 1.375rem
+        font-weight: 400
+        font-size: 0.875rem
+        margin: 0.75rem 0 auto
+        max-width: 16.6875rem
+        width: 100%
+    &-date
+        color: $darkGreyTwo
+        line-height: 1rem
+        font-size: 0.75rem
+    &-stars
+
+    .swiper
+        margin-left: 0
+        margin-right: 0
+        &-wrapper
+            min-height: 14.75rem
+        &-button
+            &-next, &-prev
+                top: 0
+                width: 41px
+                height: 41px
+                position: relative
+                right: 0
+                left: 0
+                margin-top: 0!important
+                &::after
+                    display: none
+        &-pagination
+            position: relative
+            margin: 0.6rem auto 0
+            &-bullets
+                position: relative
+                bottom: 0!important
+                width: auto!important
+            &-bullet
+                width: 12px
+                height: 12px
+                margin: auto
+                background: $darkGrey
+                opacity: 1!important
+                &-active
+                    background: $primary
+                    opacity: 1

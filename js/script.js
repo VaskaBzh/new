@@ -8,12 +8,30 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
+          clickable: true,
         },
       
         // Navigation arrows
         navigation: {
           nextEl: '.first-swiper-button-next',
           prevEl: '.first-swiper-button-prev',
+        },
+      });
+      const feedbackSwiper = new Swiper('.feedback-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.feedback-swiper-button-next',
+          prevEl: '.feedback-swiper-button-prev',
         },
       });
 });
