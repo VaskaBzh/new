@@ -1,4 +1,13 @@
-document.addEventListener('DOMContentLoaded', function(){ // Аналог $(document).ready(function(){
+$(document).ready(function () {
+  
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 500,
+    grid: true
+  });
 
   let firstTitle = document.getElementById('first')
   let firstList = document.getElementById('first-list')
@@ -95,8 +104,14 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
+          // type: 'fraction',
+          // renderFraction: function (currentClass, totalClass) {
+          //   return '<span class="' + currentClass + '"></span>' +
+          //           ' ... ' +
+          //           '<span class="' + totalClass + '"></span>';
+          // },
           renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + (index + 1) + "</span>"
+            return '<span class="' + className + '">' + (index + 1) + "</span>"
           },
         },
       
@@ -106,5 +121,4 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
           prevEl: '.search-swiper-button-prev',
         },
       });
-      
 });

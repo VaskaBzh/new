@@ -1431,7 +1431,7 @@ span {
 }
 .search__col {
   width: 19.6875rem;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 .search-swiper-slide__block {
   display: grid;
