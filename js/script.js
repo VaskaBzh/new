@@ -3,10 +3,9 @@ $(document).ready(function () {
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 0,
-    max: 1000,
-    from: 200,
-    to: 500,
-    grid: true
+    max: 200000,
+    from: 0,
+    to: 100000,
   });
 
   let firstTitle = document.getElementById('first')

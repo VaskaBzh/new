@@ -1,14 +1,115 @@
 .search
     padding: 0 0 3.75rem
+    .row
+        align-items: flex-start
     .col-25
         flex-basis: auto
     &__section
+        padding: 24px
         min-height: 67.8125rem
         max-width: 19.5rem
         width: 100%
+        box-shadow: 0px 4px 4px rgba($dark, 0.25)
         &-container
             max-width: 16.5rem
             margin: 0 auto
+    &__filters
+        padding: 0 0 24px
+        border-bottom: 1px solid $lightGreyBorder
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        flex-wrap: wrap
+        &__button
+            max-width: 108px
+            font-weight: 400
+            font-size: 0.75rem
+            line-height: 1rem
+            padding: 8px 0
+        &__el
+            &-del
+                padding: 8px 44px 8px 16px
+                border: 1px solid $lightGreyBorder
+                margin-right: 4px
+                margin-top: 4px
+            &-title
+                font-weight: 400
+                font-size: 0.75rem
+                line-height: 1rem
+                position: relative
+                &::after
+                    content: url(../img/close.svg)
+                    position: absolute
+                    right: -24px
+                    top: 50%
+                    width: 16px
+                    height: 16px
+                    margin-top: -8px
+    &__action
+        padding: 24px 0
+        border-bottom: 1px solid $lightGreyBorder
+        display: flex
+        justify-content: space-between
+        &__title
+            line-height: 1.5rem
+        &__check
+            opacity: 0
+            position: absolute
+            z-index: -1
+            &:checked
+                &+label
+                    &::before
+                        background: $primary
+                    &::after
+                        content: ''
+                        left: 26px
+            &+label 
+                display: inline-flex
+                align-items: center
+                user-select: none
+                position: relative
+                &::before
+                    content: ''
+                    display: inline-block
+                    width: 48px
+                    height: 24px
+                    border-radius: 100px
+                    background-color: $darkGrey 
+                    transition-duration: 200ms
+                &::after
+                    content: ''
+                    background: $light
+                    width: 20px
+                    height: 20px
+                    position: absolute
+                    left: 2px
+                    top: 2px
+                    border-radius: 100%
+                    transition-duration: 200ms
+    &__block
+        &__el
+            padding: 24px 0
+            border-bottom: 1px solid $lightGreyBorder
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: space-between
+        &-filters
+            color: $darkGreyTwo
+            font-size: 0.875rem
+            line-height: 1.375rem
+            font-weight: 400
+            margin-bottom: 16px
+        &-title
+            font-family: 'Montserrat'
+            position: relative
+            line-height: 1.5rem
+            line-height: 1rem
+            &::after
+                content: url(../img/list.svg)
+                position: absolute
+                left: 15rem
+                top: 0
     &__searchen
         width: 74.5%
     &__col
@@ -75,3 +176,32 @@
                 &-active
                     color: $primary
                     opacity: 1
+    .irs
+        &-min
+            display: none
+        &-max
+            display: none
+        &-from
+            display: none
+        &-to
+            display: none
+        &-single
+            display: none
+        &-line
+            height: 1px!important
+            margin-top: 10px
+        &-bar
+            height: 1px!important
+            background-color: $primary!important
+        &-handle
+            top: 17px!important
+            height: 20px!important
+            width: 20px!important
+            border-radius: 100%
+            &>i
+                &:first-child
+                    height: 20px!important
+                    width: 20px!important
+                    border-radius: 100%
+                    margin-left: -9px!important
+                    background-color: $primary!important

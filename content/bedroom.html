@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" defer></script>
     <script src="../js/swiper-bundle.min.js" defer></script>
     <script src="../js/script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" defer></script>
-    <script src="../js/JQuery.min.js" defer></script>
     
     <title>new</title>
 </head>
@@ -171,9 +171,48 @@
             <div class="container row">
                 <div class="search__section">
                     <div class="search__section-container">
-                        <input type="text" class="js-range-slider" name="my_range" value="" />
+                        <div class="search__filters">
+                                <div class="search__filters__el-del">
+                                    <p class="search__filters__el-title">Ткань</p>
+                                </div>
+                                <div class="search__filters__el-del">
+                                    <p class="search__filters__el-title">Бежевый</p>
+                                </div>
+                                <div class="search__filters__el-del">
+                                    <p class="search__filters__el-title">Ткань</p>
+                                </div>
+                                <button class="button button-primary search__filters__button">Сбросить все</button>
+                        </div>
+                        <div class="search__action">
+                            <p class="search__action__title">Акционные товары</p>
+                            <input id="check" type="checkbox" class="search__action__check">
+                            <label for="check"></label>
+                        </div>
+                        <div class="search__block__el">
+                            <span class="search__block-filters">Фильтры</span>
+                                <h3 class="search__block-title">Цена, ₽</h3>
+                                <input type="text" class="js-range-slider" name="my_range" value="" />
+                        </div>
+                            <div class="search__block__el">
+
+                            </div>
+                            <div class="search__block__el">
+
+                            </div>
+                            <div class="search__block__el">
+
+                            </div>
+                            <div class="search__block__el">
+
+                            </div>
+                            <div class="search__block__el">
+
+                            </div>
+                            <div class="search__block__el">
+
+                            </div>
+                        </div>
                     </div>
-                </div>
                 <div class="search__searchen">
 
                     <!-- Slider main container -->
@@ -1404,7 +1443,7 @@
                                 
                             </div>  
                             </div>
-                        </div>
+                        
 
                     
                         <!-- If we need navigation buttons -->
