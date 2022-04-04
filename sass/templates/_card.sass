@@ -34,11 +34,155 @@
             &-active
                 grid-row-start: 1 
                 grid-column-start: 1 
-                grid-row-end: 5
+                min-height: 540px
+                grid-row-end: 6
                 grid-column-end: 6
-                transform: scale(1.04599) translateX(-2px)
+                transform: scale(1.05)
     &__col
         max-width: 630px
         width: 100%
         margin-left: 56px
-        
+        align-items: flex-start
+        justify-content: flex-start
+        &-had
+            color: $green
+            line-height: 1rem
+            font-size: 0.75rem
+            font-weight: 400
+        &-heading
+            padding: 1rem 0
+        &-head
+            font-weight: 800
+            line-height: 2.75rem
+            font-size: 2.5rem
+            margin-bottom: 24px
+        &-text
+            font-weight: 400
+            line-height: 1.375rem
+            font-size: 0.875rem
+        &-colors
+            max-width: 15.125rem
+            width: 100%
+            margin-bottom: 24px
+            &-price
+                font-weight: 400
+                font-size: 0.875rem
+                line-height: 1.375rem
+        &-color
+            width: 32px
+            height: 32px
+            border-radius: 100%
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                width: 40px
+                height: 40px
+                background: transparent
+                border-radius: 100%
+        &-dark
+            background: $dark
+            &:hover
+                &::before
+                    border: 1px solid $dark
+                    left: -4px
+                    top: -4px
+        &-primary
+            background: $primary
+            &:hover
+                &::before
+                    border: 1px solid $primary
+                    left: -4px
+                    top: -4px
+        &-light
+            border: 1px solid $dark
+            &:hover
+                &::before
+                    border: 1px solid $dark
+                    top: -5px
+                    left: -5px
+        &-grey
+            background: $darkGreyTwo
+            &:hover
+                &::before
+                    border: 1px solid $darkGreyTwo
+                    left: -4px
+                    top: -4px
+        &-nav
+            padding: 24px 0
+            margin-bottom: 24px
+            border-bottom: 1px solid $lightGreyBorder
+            border-top: 1px solid $lightGreyBorder
+        &-price
+            line-height: 2rem
+            font-family: 'Montserrat'
+            font-weight: 700
+            font-size: 2rem
+            &-block
+                min-height: 58px
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                justify-content: space-between
+            &-del
+                font-family: 'Montserrat'
+                font-weight: 500
+                font-size: 0.875rem
+                line-height: 1.25rem
+                color: $darkGrey
+        &-favorits
+            position: relative
+            &::before
+                position: absolute
+                left: -24px
+                top: 3px
+                content: url(../img/like.svg)
+                width: 1rem
+                height: 1rem
+        &-button
+            max-width: 100%
+            margin: 24px 0 32px
+        &-input
+            max-width: 13.3125rem
+            width: 100%
+            min-height: 3.5rem
+            padding: 14px 60px 14px 91px
+            font-weight: 800
+            font-size: 1.5rem
+            line-height: 1.75rem
+        &-interactive
+            position: relative
+        &-plus
+            position: absolute
+            top: 14px
+            left: 155px
+            background: url(../img/plus.svg)
+            width: 32px
+            height: 32px
+            z-index: 100
+        &-minus
+            position: absolute
+            top: 14px
+            left: 25px
+            background: url(../img/minus.svg)
+            width: 32px
+            height: 32px
+            z-index: 100
+        &-message
+            color: $darkGrey
+            line-height: 1.375rem
+            font-size: 0.875rem
+        &-bot
+            margin-bottom: 20px
+            justify-content: flex-start
+            &-img
+                width: 24px
+                height: 24px
+                margin-right: 16px
+            &__text
+                text-align: left
+                line-height: 1rem
+                font-size: 0.75rem
+                max-width: 158px
+    &__bot
+        flex-wrap: wrap
