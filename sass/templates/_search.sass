@@ -20,6 +20,18 @@
         justify-content: flex-start
         align-items: center
         flex-wrap: wrap
+        &-back
+            display: none
+            margin-bottom: 32px
+            font-size: 12px
+            line-height: 16px
+            position: relative
+            margin-left: 24px
+            &::before
+                content: url(../img/back.svg)
+                position: absolute
+                left: -24px
+                top: 0
         &__button
             max-width: 108px
             font-weight: 400
@@ -105,15 +117,92 @@
             position: relative
             line-height: 1.5rem
             line-height: 1rem
+            transition-duration: 400ms
+            font-weight: 600
             &::after
                 content: url(../img/list.svg)
                 position: absolute
                 left: 15rem
                 top: 0
+                transition-duration: 400ms
+        &-title-after
+            &::after
+                content: url(../img/list.svg)
+                position: absolute
+                left: 15rem
+                top: 0
+                transform: rotate(180deg)
+        &-list
+            transition-duration: 400ms
+            height: 0
+            display: none
+            padding-top: 4px
+            flex-direction: column
+            align-items: flex-start
+            justify-content: space-between
+            &-nav
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 100%
+                margin-top: 1rem
+        label
+            position: relative
+        &-check
+            opacity: 0
+            z-index: -1
+            &:checked
+                &+label
+                    &::after
+                        content: ''
+                        background: $primary url(../img/check.svg) no-repeat center
+                &+.search__block-span
+                    color: $primary
+            &+label 
+                display: inline-flex
+                align-items: center
+                user-select: none
+                position: relative
+                &::after
+                    content: ''
+                    background: $light
+                    width: 20px
+                    height: 20px
+                    position: absolute
+                    left: 2px
+                    top: 12px
+                    border-radius: 2px
+                    transition-duration: 100ms
+                    border: 1px solid $dark
+        &-span
+            margin-left: 32px
+            margin-top: 12px
+            &:active
+                &+.search__block-check
+                    opacity: 0
+                    z-index: -1
+                    &:checked
+                        &+label
+                            &::after
+                                content: ''
+                                background: $primary url(../img/check.svg) no-repeat center
+        &-price
+            max-width: 88px
+            width: 100%
+            height: 42px
+            border: 1px solid $darkGrey
+        &-ok
+            max-width: 49px
+        &-line
+            max-width: 12px
+            width: 100%
+            background-color: $darkGrey
+            height: 1px
     &__searchen
         width: 74.5%
     &__col
-        width: 19.6875rem
+        max-width: 19.6875rem
+        width: 100%
         margin: 0 auto 20px
     &-swiper
         &-slide
@@ -123,9 +212,9 @@
                 grid-template-rows: 1fr 1fr 1fr 1fr
         &__nav
             margin: 2.75rem auto 0
-            width: 100%
             display: flex
-            width: 32rem
+            max-width: 32rem
+            width: 100%
         &-button
             &-next, &-prev
                 background: rgba(21, 21, 21, 0.32)
@@ -177,6 +266,8 @@
                     color: $primary
                     opacity: 1
     .irs
+        &--flat
+            width: 264px
         &-min
             display: none
         &-max
@@ -190,6 +281,7 @@
         &-line
             height: 1px!important
             margin-top: 10px
+            top: 15px!important
         &-bar
             height: 1px!important
             background-color: $primary!important
@@ -205,3 +297,8 @@
                     border-radius: 100%
                     margin-left: -9px!important
                     background-color: $primary!important
+.active
+    height: 100%
+    display: flex!important
+    &__container
+        display: block!important

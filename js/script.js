@@ -1,12 +1,4 @@
 $(document).ready(function () {
-  
-  $(".js-range-slider").ionRangeSlider({
-    type: "double",
-    min: 0,
-    max: 200000,
-    from: 0,
-    to: 100000,
-  });
 
   let firstTitle = document.getElementById('first')
   let firstList = document.getElementById('first-list')
@@ -92,32 +84,6 @@ $(document).ready(function () {
         navigation: {
           nextEl: '.action-swiper-button-next',
           prevEl: '.action-swiper-button-prev',
-        },
-      });
-      const searchSwiper = new Swiper('.search-swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          // type: 'fraction',
-          // renderFraction: function (currentClass, totalClass) {
-          //   return '<span class="' + currentClass + '"></span>' +
-          //           ' ... ' +
-          //           '<span class="' + totalClass + '"></span>';
-          // },
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>"
-          },
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.search-swiper-button-next',
-          prevEl: '.search-swiper-button-prev',
         },
       });
 });

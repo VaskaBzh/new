@@ -10,8 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" defer></script>
     <script src="../js/swiper-bundle.min.js" defer></script>
     <script src="../js/script.js" defer></script>
+    <script src="../js/script-bedroom.js" defer></script>
     
-    <title>new</title>
+    <title>cards</title>
 </head>
 <body>
     <header class="section header">
@@ -127,7 +128,7 @@
             </div>
             <div class="header__block mobile__block">
                 <div class="container row">
-                    <div class="nav__mobile">
+                    <div class="nav__mobile nav__mobile-bed">
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-1.svg" alt="mobile-element" class="nav__mobile__el-img">Мягкая мебель</a>
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-2.svg" alt="mobile-element" class="nav__mobile__el-img">Для гостинной</a>
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-3.svg" alt="mobile-element" class="nav__mobile__el-img">Для спальни</a>
@@ -157,10 +158,12 @@
                     <div class="filter__buttons row">
                         <button class="button button-secondary filter__button">Спальни Арида Мебель</button>
                         <button class="button button-secondary filter__button">Спальни Слониммебель</button>
+                        <button class="button button-secondary filter__button filter__button-mobile">Спальни Milwood</button>
                     </div>
                     <div class="filter__filters row">
                         <span class="filter__filters-container">Сортировать:</span>
                         <span class="filter__filters-popular">по популярности</span>
+                        <button class="button button-primary filter__filters-button">Фильтры</button>
                     </div>
                 </div>
             </div>
@@ -171,6 +174,8 @@
             <div class="container row">
                 <div class="search__section">
                     <div class="search__section-container">
+                        <span class="search__filters-back">Вернуться в каталог</span>
+                        <div class="search__filters-min">
                         <div class="search__filters">
                                 <div class="search__filters__el-del">
                                     <p class="search__filters__el-title">Ткань</p>
@@ -191,25 +196,141 @@
                         <div class="search__block__el">
                             <span class="search__block-filters">Фильтры</span>
                                 <h3 class="search__block-title">Цена, ₽</h3>
-                                <input type="text" class="js-range-slider" name="my_range" value="" />
+                                <div class="search__block-list">
+                                    <div class="search__block-list-nav">
+                                        <input type="text" class="search__block-price">
+                                        <div class="search__block-line"></div>
+                                        <input type="text" class="search__block-price">
+                                        <button class="button-primary button search__block-ok">ок</button>
+                                    </div>
+                                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                                </div>
                         </div>
                             <div class="search__block__el">
-
+                                <h3 class="search__block-title">Материал корпуса</h3>
+                                <div class="search__block-list">
+                                    <input id="search__check1" type="checkbox" class="search__block-check">
+                                    <label for="search__check1"></label>
+                                    <span class="search__block-span">Массив, МДФ</span>
+                                    <input id="search__check2" type="checkbox" class="search__block-check">
+                                    <label for="search__check2"></label>
+                                    <span class="search__block-span">МДФ</span>
+                                    <input id="search__check3" type="checkbox" class="search__block-check">
+                                    <label for="search__check3"></label>
+                                    <span class="search__block-span">МДФ, ЛДСП</span>
+                                    <input id="search__check4" type="checkbox" class="search__block-check">
+                                    <label for="search__check4"></label>
+                                    <span class="search__block-span">МДФ, массив</span>
+                                    <input id="search__check5" type="checkbox" class="search__block-check">
+                                    <label for="search__check5"></label>
+                                    <span class="search__block-span">плита ламинированная</span>
+                                </div>
                             </div>
                             <div class="search__block__el">
+                                <h3 class="search__block-title">Материал обивки</h3>
+                                <div class="search__block-list">
+                                    <input id="search__check6" type="checkbox" class="search__block-check">
+                                    <label for="search__check6"></label>
+                                    <span class="search__block-span">Велюр</span>
+                                    <input id="search__check7" type="checkbox" class="search__block-check">
+                                    <label for="search__check7"></label>
+                                    <span class="search__block-span">Ткань</span>
+                                    <input id="search__check8" type="checkbox" class="search__block-check">
+                                    <label for="search__check8"></label>
+                                    <span class="search__block-span">Кожа</span>
+                                    <input id="search__check9" type="checkbox" class="search__block-check">
+                                    <label for="search__check9"></label>
+                                    <span class="search__block-span">Ткань / Кожа</span>
+                                    <input id="search__check10" type="checkbox" class="search__block-check">
+                                    <label for="search__check10"></label>
+                                    <span class="search__block-span">Экокожа</span>
 
+                                </div>
                             </div>
                             <div class="search__block__el">
+                                <h3 class="search__block-title">Цвет</h3>
+                                <div class="search__block-list">
+                                    <input id="search__check11" type="checkbox" class="search__block-check">
+                                    <label for="search__check11"></label>
+                                    <span class="search__block-span">Массив, МДФ</span>
+                                    <input id="search__check12" type="checkbox" class="search__block-check">
+                                    <label for="search__check12"></label>
+                                    <span class="search__block-span">МДФ</span>
+                                    <input id="search__check13" type="checkbox" class="search__block-check">
+                                    <label for="search__check13"></label>
+                                    <span class="search__block-span">МДФ, ЛДСП</span>
+                                    <input id="search__check14" type="checkbox" class="search__block-check">
+                                    <label for="search__check14"></label>
+                                    <span class="search__block-span">МДФ, массив</span>
+                                    <input id="search__check15" type="checkbox" class="search__block-check">
+                                    <label for="search__check15"></label>
+                                    <span class="search__block-span">плита ламинированная</span>
 
+                                </div>
                             </div>
                             <div class="search__block__el">
+                                <h3 class="search__block-title">Стиль</h3>
+                                <div class="search__block-list">
+                                    <input id="search__check16" type="checkbox" class="search__block-check">
+                                    <label for="search__check16"></label>
+                                    <span class="search__block-span">Массив, МДФ</span>
+                                    <input id="search__check17" type="checkbox" class="search__block-check">
+                                    <label for="search__check17"></label>
+                                    <span class="search__block-span">МДФ</span>
+                                    <input id="search__check18" type="checkbox" class="search__block-check">
+                                    <label for="search__check18"></label>
+                                    <span class="search__block-span">МДФ, ЛДСП</span>
+                                    <input id="search__check19" type="checkbox" class="search__block-check">
+                                    <label for="search__check19"></label>
+                                    <span class="search__block-span">МДФ, массив</span>
+                                    <input id="search__check20" type="checkbox" class="search__block-check">
+                                    <label for="search__check20"></label>
+                                    <span class="search__block-span">плита ламинированная</span>
 
+                                </div>
                             </div>
                             <div class="search__block__el">
+                                <h3 class="search__block-title">Производитель</h3>
+                                <div class="search__block-list">
+                                    <input id="search__check21" type="checkbox" class="search__block-check">
+                                    <label for="search__check21"></label>
+                                    <span class="search__block-span">Массив, МДФ</span>
+                                    <input id="search__check22" type="checkbox" class="search__block-check">
+                                    <label for="search__check22"></label>
+                                    <span class="search__block-span">МДФ</span>
+                                    <input id="search__check23" type="checkbox" class="search__block-check">
+                                    <label for="search__check23"></label>
+                                    <span class="search__block-span">МДФ, ЛДСП</span>
+                                    <input id="search__check24" type="checkbox" class="search__block-check">
+                                    <label for="search__check24"></label>
+                                    <span class="search__block-span">МДФ, массив</span>
+                                    <input id="search__check25" type="checkbox" class="search__block-check">
+                                    <label for="search__check25"></label>
+                                    <span class="search__block-span">плита ламинированная</span>
 
+                                </div>
                             </div>
                             <div class="search__block__el">
+                                <h3 class="search__block-title">Страна производства</h3>
+                                <div class="search__block-list">
+                                    <input id="search__check26" type="checkbox" class="search__block-check">
+                                    <label for="search__check26"></label>
+                                    <span class="search__block-span">Массив, МДФ</span>
+                                    <input id="search__check27" type="checkbox" class="search__block-check">
+                                    <label for="search__check27"></label>
+                                    <span class="search__block-span">МДФ</span>
+                                    <input id="search__check28" type="checkbox" class="search__block-check">
+                                    <label for="search__check28"></label>
+                                    <span class="search__block-span">МДФ, ЛДСП</span>
+                                    <input id="search__check29" type="checkbox" class="search__block-check">
+                                    <label for="search__check29"></label>
+                                    <span class="search__block-span">МДФ, массив</span>
+                                    <input id="search__check30" type="checkbox" class="search__block-check">
+                                    <label for="search__check30"></label>
+                                    <span class="search__block-span">плита ламинированная</span>
 
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -223,6 +344,7 @@
                             <div class="swiper-slide search-swiper-slide">
                                 <div class="search-swiper-slide__block">
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -243,6 +365,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -263,6 +386,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -283,6 +407,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -303,6 +428,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -323,6 +449,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -343,6 +470,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -363,6 +491,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -383,6 +512,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -403,6 +533,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -423,6 +554,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -443,250 +575,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="swiper-slide search-swiper-slide">
-                                <div class="search-swiper-slide__block">
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
-                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
-                                        <div class="action__col-block">
-                                            <div class="action__col-heading">
-                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
-                                                <p class="action__col-text">Производитель Millwood</p>
-                                            </div>  
-                                        <span class="action__col-had">Товар в наличии</span>
-                                        <div class="action__col-nav">
-                                            <div class="action__col-price-block">
-                                                
-                                                <span class="action__col-price">318 000 ₽</span>
-                                            </div>
-                                            <div class="action__col-interface">
-                                                <span class="action__col-favorits">В избранное</span>
-                                                <a href="#" class="action__col-bag"></a>
-                                            </div>
-                                        </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -711,6 +600,7 @@
                             <div class="swiper-slide search-swiper-slide">
                                 <div class="search-swiper-slide__block">
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -731,6 +621,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -751,6 +642,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -771,6 +663,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -791,6 +684,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -811,6 +705,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -831,6 +726,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -851,6 +747,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -871,6 +768,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -891,6 +789,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -911,6 +810,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -931,6 +831,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -955,6 +856,7 @@
                             <div class="swiper-slide search-swiper-slide">
                                 <div class="search-swiper-slide__block">
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -975,6 +877,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -995,6 +898,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1015,6 +919,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1035,6 +940,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1055,6 +961,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1075,6 +982,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1095,6 +1003,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1115,6 +1024,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1135,6 +1045,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1155,6 +1066,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1175,6 +1087,263 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="swiper-slide search-swiper-slide">
+                                <div class="search-swiper-slide__block">
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
+                                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                        <div class="action__col-block">
+                                            <div class="action__col-heading">
+                                                <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
+                                                <p class="action__col-text">Производитель Millwood</p>
+                                            </div>  
+                                        <span class="action__col-had">Товар в наличии</span>
+                                        <div class="action__col-nav">
+                                            <div class="action__col-price-block">
+                                                
+                                                <span class="action__col-price">318 000 ₽</span>
+                                            </div>
+                                            <div class="action__col-interface">
+                                                <span class="action__col-favorits">В избранное</span>
+                                                <a href="#" class="action__col-bag"></a>
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1200,6 +1369,7 @@
                             <div class="swiper-slide search-swiper-slide">
                                 <div class="search-swiper-slide__block">
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1220,6 +1390,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1240,6 +1411,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1260,6 +1432,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1280,6 +1453,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1300,6 +1474,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1320,6 +1495,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1340,6 +1516,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1360,6 +1537,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1380,6 +1558,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1400,6 +1579,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
@@ -1420,6 +1600,7 @@
                                             </div>
                                     </div>
                                     <div class="col-25 col action__col search__col">
+                                        <a href="../content/card.html" class="click"></a>
                                         <img src="../img/action-one.webp" alt="action" class="action__col-img">
                                         <div class="action__col-block">
                                             <div class="action__col-heading">
