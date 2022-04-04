@@ -1373,6 +1373,9 @@ span {
 .filter__road-end {
   color: #B7B7B7;
 }
+.filter__road-end::after {
+  content: "";
+}
 .filter__road__el {
   font-size: 0.875rem;
   line-height: 1.375rem;
@@ -1382,7 +1385,7 @@ span {
 .filter__road__el::after {
   content: "–";
   position: absolute;
-  right: 0;
+  right: -14px;
   top: 0;
   color: #B7B7B7;
 }
@@ -1784,6 +1787,59 @@ span {
 }
 .active__container {
   display: block !important;
+}
+
+.card {
+  padding: 18px 0 2.5rem;
+}
+.card__road {
+  max-width: 435px;
+  width: 100%;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.card__road__el {
+  font-weight: 400;
+  color: #272727;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  position: relative;
+}
+.card__road__el::after {
+  content: "-";
+  color: #B7B7B7;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+.card__road-end {
+  color: #B7B7B7;
+}
+.card__road-end::after {
+  content: "";
+}
+.card__content-gallery {
+  max-width: 762px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.card__content-pic {
+  min-height: 100px;
+}
+.card__content-pic-active {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 6;
+  transform: scale(1.04599) translateX(-2px);
+}
+.card__col {
+  max-width: 630px;
+  width: 100%;
+  margin-left: 56px;
 }
 
 .footer {
