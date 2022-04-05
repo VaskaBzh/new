@@ -40,6 +40,16 @@
             &-head
                 font-size: 0.85rem
 @media screen and ( max-width: 1180px)
+    .card
+        &__content
+            &-pic
+                &-active
+                    min-height: 500px
+        &__col
+            &-plus
+                left: 135px
+        &__road
+            max-width: 385px
     .header
         &__info
             max-width: 75%
@@ -77,6 +87,20 @@
         .irs--flat
             width: 100%
 @media screen and ( max-width: 992px )
+    .card
+        .row
+            flex-wrap: wrap
+        &__content
+            &-pic
+                min-height: auto
+                &-active
+                    min-height: auto
+            &-gallery
+                margin-bottom: 24px
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        &__col
+            margin-left: 0
+            max-width: 100%
     .header
         .logo
             display: none
@@ -193,6 +217,47 @@
             &:nth-child(1)
                 display: none
 @media screen and ( max-width: 425px )
+    .card
+        .col-50
+            width: 100%
+        &__bot
+            .row
+                flex-wrap: nowrap!important
+        &__road
+            &__el
+                display: none
+                &::after
+                    display: none
+            &-mobile
+                display: block
+                margin-left: 20px
+        .container  
+            width: 100%
+        &__content
+            &-gallery
+                grid-template-rows: 1fr 1fr 1fr 1fr
+                width: 100%
+        &__col
+            padding: 0 20px
+            &-bot
+                &__text
+                    max-width: 100%
+                    font-size: 0.85rem
+            &-interactive
+                flex-wrap: nowrap!important
+            &-input
+                padding: 14px 35px 14px 75px
+                margin-right: 10px
+            &-complects
+                &-text
+                    max-width: 210px
+    .char
+        .row
+            flex-wrap: wrap
+        &__col
+            width: 100%
+            &:nth-child(0)
+                margin-bottom: 40px
     .filter
         &__road
             &-first
@@ -373,7 +438,7 @@
             width: 334px!important
             margin-left: 0rem
             overflow: visible
-            margin-left: 1.7rem
+            margin-left: 4rem
             &-wrapper
                 max-width: 334px!important
         &-swiper
@@ -474,6 +539,9 @@
             &-title
                 &::after
                     left: 19rem
+    .action
+        .swiper
+            margin-left: 1.7rem
 @media screen and ( max-width: 320px )
     .container
         width: 95%
@@ -505,3 +573,10 @@
             &-title
                 &::after
                     left: 15rem
+    .action
+        .swiper
+            margin-left: 6.7rem
+        &-swiper
+            &__nav
+                margin: 2.75rem auto auto -5rem
+                width: 85%
