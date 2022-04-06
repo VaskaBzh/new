@@ -937,6 +937,7 @@ span {
   padding: 0 2.3125rem 0 5.25rem;
 }
 .tabs__block-height {
+  border-top: 1.25rem solid #fff;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -1370,12 +1371,6 @@ span {
 .filter__road {
   max-width: 17rem;
 }
-.filter__road-end {
-  color: #B7B7B7;
-}
-.filter__road-end::after {
-  content: "";
-}
 .filter__road__el {
   font-size: 0.875rem;
   line-height: 1.375rem;
@@ -1388,6 +1383,12 @@ span {
   right: -14px;
   top: 0;
   color: #B7B7B7;
+}
+.filter__road-end {
+  color: #B7B7B7;
+}
+.filter__road-end::after {
+  content: "" !important;
 }
 .filter__title {
   font-size: 2.5rem;
