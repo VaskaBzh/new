@@ -168,6 +168,17 @@
                     left: 130px
 
 @media screen and ( max-width: 768px )
+    .search
+        &__section
+            padding: 0
+            overflow-y: scroll
+            height: 100vh
+            padding: 0
+            &-container
+                overflow: visible
+                height: 100rem
+                padding: 24px
+                max-width: 100%
     .footer
         &__col
             &-heading 
@@ -259,6 +270,11 @@
             &:nth-child(0)
                 margin-bottom: 40px
     .filter
+        &__filters
+            &-popular
+                max-width: 162px
+            &:no-button
+                max-width: 162px
         &__road
             &-first
                 display: none
@@ -285,6 +301,8 @@
             &-button
                 max-width: 165px
     .search
+        .container
+            width: 100%
         &__col
             max-width: 163px
             width: 100%
@@ -292,7 +310,15 @@
         &__block
             &-title
                 &::after
-                    left: 22rem
+                    left: 25rem
+        &__section
+            &-container
+                margin-left: 0
+        &__filters
+            padding-right: 40px
+        &__searchen 
+            width: 90%
+            margin: auto
     .hero
         padding: 0!important
         .container
@@ -529,6 +555,9 @@
         &__rights
             margin-top: 1rem
 @media screen and ( max-width: 375px )
+    .filter
+        &__button
+            max-width: 11.5rem
     .footer
         &__col
             &-title
@@ -538,7 +567,7 @@
         &__block
             &-title
                 &::after
-                    left: 19rem
+                    left: 21rem
     .action
         .swiper
             margin-left: 1.7rem
@@ -552,7 +581,7 @@
                     left: 19.5rem
     .filter
         &__button
-            max-width: 10rem
+            max-width: 10.5rem
         &__filters
             flex-wrap: nowrap!important
             &-popular
@@ -572,7 +601,7 @@
         &__block
             &-title
                 &::after
-                    left: 15rem
+                    left: 17rem
     .action
         .swiper
             margin-left: 6.7rem
