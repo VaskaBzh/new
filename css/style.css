@@ -1742,6 +1742,10 @@ span {
   position: relative;
   bottom: 0 !important;
   width: auto !important;
+  left: 0 !important;
+  transform: translateX(0) !important;
+  max-width: 140px;
+  margin: auto;
 }
 .search .swiper-pagination-bullet {
   width: 12px;
@@ -1750,10 +1754,17 @@ span {
   background: #fff;
   color: #272727;
   opacity: 1 !important;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  transform: scale(0) !important;
 }
 .search .swiper-pagination-bullet-active {
   color: #90140C;
   opacity: 1;
+  transform: scale(1) !important;
+}
+.search .swiper-pagination-bullet-active-next, .search .swiper-pagination-bullet-active-prev, .search .swiper-pagination-bullet-active-next-next, .search .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(1) !important;
 }
 .search .irs--flat {
   width: 264px;
@@ -1802,6 +1813,10 @@ span {
 }
 .active__container {
   display: block !important;
+}
+
+.visible {
+  transform: scale(1);
 }
 
 .card {

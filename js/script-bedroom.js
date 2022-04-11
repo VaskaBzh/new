@@ -86,6 +86,8 @@ $(document).ready(function () {
             renderBullet: function (index, className) {
               return '<span class="' + className + '">' + (index + 1) + "</span>"
             },
+            dynamicBullets: true,
+            dynamicMainBulltes: 5,
           },
         
           // Navigation arrows
