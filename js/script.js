@@ -35,6 +35,9 @@ $(document).ready(function () {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
+        autoplay: {
+          delay: 2000,
+        },
       
         // If we need pagination
         pagination: {
@@ -54,6 +57,9 @@ $(document).ready(function () {
         loop: true,
         slidesPerView: 3,
         spaceBetween: 20,
+        autoplay: {
+          delay: 5000,
+        },
       
         // If we need pagination
         pagination: {
@@ -73,6 +79,9 @@ $(document).ready(function () {
         loop: true,
         slidesPerView: 2,
         spaceBetween: 8,
+        autoplay: {
+          delay: 5000,
+        },
       
         // If we need pagination
         pagination: {

@@ -540,6 +540,11 @@ span {
   margin-top: 0.8rem;
   cursor: pointer;
 }
+.section__text_link {
+  color: #90140C;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .input {
   font-weight: 400;
@@ -927,6 +932,8 @@ span {
   background: #F4F4F4;
   border-right: 1.25rem solid #fff;
   border-top: 1.25rem solid #fff;
+  text-decoration: none;
+  color: #272727;
 }
 .tabs__block-width {
   grid-column-start: 1;
@@ -945,6 +952,8 @@ span {
   width: 100%;
   background: #F4F4F4;
   padding: 5.75rem 0 0 0;
+  text-decoration: none;
+  color: #272727;
 }
 .tabs__block__title {
   font-weight: 800;
