@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" defer></script>
     <script src="../js/swiper-bundle.min.js" defer></script>
+    <script src="../js/galery-script.js" defer></script>
     <script src="../js/script-color.js" defer></script>
     <script src="../js/script-input.js" defer></script>
     <script src="../js/script.js" defer></script>
@@ -150,10 +151,10 @@
         <section class="section card">
             <div class="container">
                 <div class="card__road row">
-                    <span class="card__road-first card__road__el">Главная</span>
-                    <span class="card__road-second card__road__el"> Мебель для спален</span>
-                    <span class="card__road-end card__road__el">Кровать Двуспальная Лофт КМ-2.6</span>
-                    <span class="card__road__el card__road-mobile">Спальни</span>
+                    <a href="../index.html" class="card__road-first card__road__el">Главная</a>
+                    <a href="#" class="card__road-second card__road__el"> Мебель для спален</a>
+                    <a href="#" class="card__road-end card__road__el">Кровать Двуспальная Лофт КМ-2.6</a>
+                    <a href="#" class="card__road__el card__road-mobile">Спальни</a>
                 </div>
                 <div class="row card__content">
                     <div class="card__content-gallery">
@@ -169,14 +170,13 @@
                         <div class="card__col-block">
                             <div class="card__col-heading">
                                 <h3 class="card__col-head">Кровать Двуспальная Лофт КМ-2.6</h3>
-                                <p class="card__col-text">Производитель: Арида Мебель</p>
+                                <a href="#" class="card__col-text">Производитель: Арида Мебел</a>
                             </div>     
                             <div class="card__col-colors row">
-                                <span class="card__col-collors-price">Цвета:</span>
-                                <div class="card__col-color card__col-dark"></div>
-                                <div class="card__col-color card__col-primary"></div>
-                                <div class="card__col-color card__col-light"></div>
-                                <div class="card__col-color card__col-grey"></div>
+                                <a href="#" class="card__col-color card__col-dark"></a>
+                                <a href="#" class="card__col-color card__col-primary"></a>
+                                <a href="#" class="card__col-color card__col-light"></a>
+                                <a href="#" class="card__col-color card__col-grey"></a>
                             </div>
                             <div class="card__col-complects col">
                                 <div class="card__col-complects__el">
@@ -303,20 +303,20 @@
                     </div>
                 </div>
                 <div class="col col-50 char__col">
-                    <h2 class="section__title char__title">Описание товара</h2>
-                    <div class="char__blocks col">
-                        <p class="char__text">Утонченность и лаконичность - так коротко можно описать стул А-100 (красный). Модель классической формы, имеет современный внешний вид. Это достигается за счет использования:</p>
+                    <h2 class="section__title">Описание товара</h2>
+                    <div class="col">
+                        <p>Утонченность и лаконичность - так коротко можно описать стул А-100 (красный). Модель классической формы, имеет современный внешний вид. Это достигается за счет использования:</p>
                         <ul class="char__list">
-                            <li class="char__list__el">красочной расцветки;</li>
-                            <li class="char__list__el">интересного декора обивки из велюра, который придает актуальный ретро-оттенок;</li>
-                            <li class="char__list__el">хромированных ножек.</li>
+                            <li>красочной расцветки;</li>
+                            <li>интересного декора обивки из велюра, который придает актуальный ретро-оттенок;</li>
+                            <li>хромированных ножек.</li>
                         </ul>
                             
-                        <p class="char__text">Благодаря такому сочетанию модель имеет эстетически привлекательный облик, который сможет отлично дополнить различные интерьеры: эклектика, арт-деко, неоклассика и другие.</p>
+                        <p>Благодаря такому сочетанию модель имеет эстетически привлекательный облик, который сможет отлично дополнить различные интерьеры: эклектика, арт-деко, неоклассика и другие.</p>
                             
-                        <p class="char__text">Конструктивно модель также удобна. Изготовлена из качественных материалов по современным технологиям, благодаря чему характеризуется надежностью конструкции и достаточно длительным сроком службы. </p>
+                        <p>Конструктивно модель также удобна. Изготовлена из качественных материалов по современным технологиям, благодаря чему характеризуется надежностью конструкции и достаточно длительным сроком службы. </p>
                             
-                        <p class="char__text">Все это вкупе и делает А-100 привлекательным выбором для ряда интерьеров кухонь, столовых, гостиных, спален и кабинетов.</p>
+                        <p>Все это вкупе и делает А-100 привлекательным выбором для ряда интерьеров кухонь, столовых, гостиных, спален и кабинетов.</p>
                     </div>
                 </div>
             </div>
@@ -815,5 +815,13 @@
         <!-- /.row footer__row -->
     </footer>
     <!-- /.footer section -->
+    
+    <div class="shadow">
+        <div class="gallery">
+            <img class="gallery__close" src="../img/close.svg" alt="close">
+            <img class="gallery__img" src="" alt="photo">
+        </div>
+    </div>
+    <!-- /.shadow -->
 </body>
 </html>

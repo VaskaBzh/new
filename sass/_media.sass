@@ -227,7 +227,7 @@
         &__block
             &:nth-child(1)
                 display: none
-@media screen and ( max-width: 425px )
+@media screen and ( max-width: 706px )
     .card
         .col-50
             width: 100%
@@ -356,7 +356,7 @@
         width: 88%
     .feedback
         .swiper    
-            margin-left: -20.2rem
+            margin-left: -8.2rem
         .section
             &__block
                 margin-top: 0
@@ -464,7 +464,7 @@
             width: 334px!important
             margin-left: 0rem
             overflow: visible
-            margin-left: 4rem
+            margin-left: 14rem
             &-wrapper
                 max-width: 334px!important
         &-swiper
@@ -489,6 +489,7 @@
     .active
         display: flex!important
         overflow: visible
+        opacity: 1
     .footer
         &__row
             &-left
@@ -548,21 +549,36 @@
                     content: url(../img/list.svg)
                     margin-left: auto
                     position: absolute
-                    left: 24.5rem
+                    right: 0
                     top: 0
                 &-center
                     display: none
         &__rights
             margin-top: 1rem
+    .shadow
+        .galery
+            width: 90%
+            height: 90%
+@media screen and ( max-width: 570px )
+    .action
+        overflow-x: hidden
+        .swiper
+            margin-left: 9rem
+    .feedback
+        .swiper     
+            margin-left: -13.2rem
+@media screen and ( max-width: 425px )
+    .action
+        overflow-x: hidden
+        .swiper
+            margin-left: 4rem
+    .feedback
+        .swiper    
+            margin-left: -19.2rem
 @media screen and ( max-width: 375px )
     .filter
         &__button
             max-width: 11.5rem
-    .footer
-        &__col
-            &-title
-                &::after
-                    left: 22.5rem
     .search
         &__block
             &-title
@@ -574,11 +590,6 @@
 @media screen and ( max-width: 320px )
     .container
         width: 95%
-    .footer
-        &__col
-            &-title
-                &::after
-                    left: 19.5rem
     .filter
         &__button
             max-width: 10.5rem

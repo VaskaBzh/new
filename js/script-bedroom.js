@@ -13,8 +13,6 @@ $(document).ready(function () {
     let filter = document.querySelector('.filter__filters-button')
     let containerFilter = document.querySelector('.search__section')
     let filterClose = document.querySelector('.search__filters-back')
-    let link = document.querySelectorAll('.search__col')
-    let click = document.querySelectorAll('.click')
     let buttonApply = document.querySelector('.search__block-apply')
     let body = document.querySelector('body')
     let handleFrom = document.querySelector('.from')
@@ -23,6 +21,8 @@ $(document).ready(function () {
     let to = document.querySelector('.irs-to')
     let inputFrom = document.getElementById('searchFrom')
     let inputTo = document.getElementById('searchTo')
+
+    
 
     const inputStart = function () {
       inputTo.value = to.textContent
@@ -54,13 +54,6 @@ $(document).ready(function () {
       body.classList.remove('no-scroll')
       buttonApply.classList.remove('active__container')
     })
-
-    for( let i = 0; i < link.length; i++ ) {
-      link[i].addEventListener('click', function () {
-        click[i].click()
-      })
-    }
-
     for( let i = 0; i < 7; i++ ) {
             button[i].addEventListener('click', function () {
                 open[i].classList.toggle('active')
@@ -73,22 +66,22 @@ $(document).ready(function () {
           direction: 'horizontal',
           loop: true,
         
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            // type: 'fraction',
-            // renderFraction: function (currentClass, totalClass) {
-            //   return '<span class="' + currentClass + '"></span>' +
-            //           ' ... ' +
-            //           '<span class="' + totalClass + '"></span>';
-            // },
-            renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + (index + 1) + "</span>"
-            },
-            dynamicBullets: true,
-            dynamicMainBulltes: 5,
-          },
+          // // If we need pagination
+          // pagination: {
+          //   el: '.swiper-pagination',
+          //   clickable: true,
+          //   // type: 'fraction',
+          //   // renderFraction: function (currentClass, totalClass) {
+          //   //   return '<span class="' + currentClass + '"></span>' +
+          //   //           ' ... ' +
+          //   //           '<span class="' + totalClass + '"></span>';
+          //   // },
+          //   renderBullet: function (index, className) {
+          //     return '<span class="' + className + '">' + (index + 1) + "</span>"
+          //   },
+          //   dynamicBullets: true,
+          //   dynamicMainBulltes: 5,
+          // },
         
           // Navigation arrows
           navigation: {
