@@ -1774,6 +1774,18 @@ span {
   align-items: flex-start;
   min-height: 61px;
 }
+.search .swiper-pagination-nobullet {
+  width: 12px;
+  height: 12px;
+  margin: 2px 2px 2px 2px;
+  background: #fff;
+  cursor: pointer;
+  color: #272727;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  transition: all 0.4s;
+  opacity: 1 !important;
+}
 .search .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
