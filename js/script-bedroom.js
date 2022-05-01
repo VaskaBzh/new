@@ -37,8 +37,10 @@ $(document).ready(function () {
         elems[index].classList.add(strClass)
     }
 
+    nextSlide(slides, 0, 'swiper-slide-active')
+    nextSlide(dots, 0, 'swiper-pagination-bullet-active')
+
     sliderBlockNav.addEventListener('click', (e) => {
-        e.preventDefault()
 
         if (!e.target.matches('.swiper-pagination-bullet, .swiper-button-next, .swiper-button-prev')) {
             return
@@ -54,19 +56,18 @@ $(document).ready(function () {
         } else if (e.target.classList.contains('swiper-pagination-bullet')) {
             dots.forEach((dot, index) => {
                 if (e.target === dot && e.target.textContent <= 5) {
-                    currentSlide = index
-                } else if (e.target.textContent > 5) {
-                  dot.click()
+                  e.preventDefault()
+                  currentSlide = index
                 }
             })
         }
 
         if (currentSlide >= slides.length) {
-            currentSlide = 0
+            document.getElementById('next').click()
         }
 
         if (currentSlide < 0) {
-            currentSlide = slides.length - 1
+          document.getElementById('final').click()
         }
 
         nextSlide(slides, currentSlide, 'swiper-slide-active')
