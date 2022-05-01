@@ -22,6 +22,57 @@ $(document).ready(function () {
     let inputFrom = document.getElementById('searchFrom')
     let inputTo = document.getElementById('searchTo')
 
+    const sliderBlockNav = document.querySelector('.search-swiper__nav')
+    const slides = document.querySelectorAll('.swiper-slide')
+    const dots = document.querySelectorAll('.swiper-pagination-bullet')
+
+    let currentSlide = 0
+
+
+    const prevSlide = (elems, index, strClass) => {
+        elems[index].classList.remove(strClass)
+    }
+
+    const nextSlide = (elems, index, strClass) => {
+        elems[index].classList.add(strClass)
+    }
+
+    sliderBlockNav.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        if (!e.target.matches('.swiper-pagination-bullet, .swiper-button-next, .swiper-button-prev')) {
+            return
+        }
+
+        prevSlide(slides, currentSlide, 'swiper-slide-active')
+        prevSlide(dots, currentSlide, 'swiper-pagination-bullet-active')
+
+        if (e.target.matches('.swiper-button-next')) {
+            currentSlide++
+        } else if (e.target.matches('.swiper-button-prev')) {
+            currentSlide--
+        } else if (e.target.classList.contains('swiper-pagination-bullet')) {
+            dots.forEach((dot, index) => {
+                if (e.target === dot && e.target.textContent <= 5) {
+                    currentSlide = index
+                } else if (e.target.textContent > 5) {
+                  dot.click()
+                }
+            })
+        }
+
+        if (currentSlide >= slides.length) {
+            currentSlide = 0
+        }
+
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1
+        }
+
+        nextSlide(slides, currentSlide, 'swiper-slide-active')
+        nextSlide(dots, currentSlide, 'swiper-pagination-bullet-active')
+
+    })
     
 
     const inputStart = function () {
@@ -60,35 +111,6 @@ $(document).ready(function () {
                 button[i].classList.toggle('search__block-title-after')
             })
     }
-
-        const searchSwiper = new Swiper('.search-swiper', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: true,
-        
-          // // If we need pagination
-          // pagination: {
-          //   el: '.swiper-pagination',
-          //   clickable: true,
-          //   // type: 'fraction',
-          //   // renderFraction: function (currentClass, totalClass) {
-          //   //   return '<span class="' + currentClass + '"></span>' +
-          //   //           ' ... ' +
-          //   //           '<span class="' + totalClass + '"></span>';
-          //   // },
-          //   renderBullet: function (index, className) {
-          //     return '<span class="' + className + '">' + (index + 1) + "</span>"
-          //   },
-          //   dynamicBullets: true,
-          //   dynamicMainBulltes: 5,
-          // },
-        
-          // Navigation arrows
-          navigation: {
-            nextEl: '.search-swiper-button-next',
-            prevEl: '.search-swiper-button-prev',
-          },
-        });
 
       inputStart()
   });

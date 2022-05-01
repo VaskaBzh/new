@@ -730,11 +730,15 @@ span {
   line-height: 0.75rem;
   font-size: 0.75rem;
 }
+.header .contacts__messager a {
+  color: #fff;
+  text-decoration: none;
+}
 .header .information {
   max-width: 25.8125rem;
   width: 100%;
 }
-.header .information__el {
+.header .information a {
   line-height: 1.375rem;
   font-weight: 400;
   text-decoration: none;
@@ -1732,6 +1736,21 @@ span {
 .search-swiper-button-prev:hover {
   background: #90140C;
 }
+.search .swiper-wrapper {
+  position: relative;
+  min-height: 1647px;
+}
+.search .swiper-slide {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+}
+.search .swiper-slide-active {
+  opacity: 1;
+}
 .search .swiper-button-next, .search .swiper-button-prev {
   top: 0;
   width: 41px;
@@ -1746,30 +1765,33 @@ span {
 }
 .search .swiper-pagination {
   position: relative;
-  margin: 0.6rem auto 0;
-}
-.search .swiper-pagination-bullets {
-  position: relative;
-  bottom: 0 !important;
-  width: auto !important;
-  left: 0 !important;
-  transform: translateX(0) !important;
-  max-width: 140px;
-  margin: auto;
+  margin: 0 auto 0;
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 61px;
 }
 .search .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  margin: auto;
+  margin: 2px 2px 2px 2px;
   background: #fff;
+  cursor: pointer;
   color: #272727;
-  opacity: 1 !important;
   font-size: 1rem;
   line-height: 1.75rem;
+  transition: all 0.4s;
+  opacity: 1 !important;
+}
+.search .swiper-pagination-bullet:hover {
+  color: #90140C;
+  transform: scale(1.1);
 }
 .search .swiper-pagination-bullet-active {
   color: #90140C;
-  opacity: 1;
 }
 .search .irs--flat {
   width: 264px;
