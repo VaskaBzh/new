@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" defer></script>
     <script src="../js/swiper-bundle.min.js" defer></script>
     <script src="../js/galery-script.js" defer></script>
+    <script src="../js/script-linkToCard.js" defer></script>
+    <script src="../js/script.js" defer></script>
     <script src="../js/script-input.js" defer></script>
     <script src="../js/script-color.js" defer></script>
     <script src="../js/script.js" defer></script>
@@ -71,7 +73,7 @@
                         <div class="nav__mobile mobile__main-nav">
                             <a href="#" class="nav__mobile__el"><img src="../img/mobile-1.svg" alt="mobile-element" class="nav__mobile__el-img">Мягкая мебель</a>
                             <a href="#" class="nav__mobile__el"><img src="../img/mobile-2.svg" alt="mobile-element" class="nav__mobile__el-img">Для гостинной</a>
-                            <a href="../content/bedroom.html" class="nav__mobile__el"><img src="../img/mobile-3.svg" alt="mobile-element" class="nav__mobile__el-img">Для спальни</a>
+                            <a href="./bedroom.html" class="nav__mobile__el"><img src="../img/mobile-3.svg" alt="mobile-element" class="nav__mobile__el-img">Для спальни</a>
                             <a href="#" class="nav__mobile__el"><img src="../img/mobile-4.svg" alt="mobile-element" class="nav__mobile__el-img">Для детской</a>
                             <a href="#" class="nav__mobile__el"><img src="../img/mobile-5.svg" alt="mobile-element" class="nav__mobile__el-img">Для прихожей</a>
                             <a href="#" class="nav__mobile__el"><img src="../img/mobile-6.svg" alt="mobile-element" class="nav__mobile__el-img">Столы</a>
@@ -100,7 +102,7 @@
                         <a href="#" class="nav-section__el">Сад</a>
                     </div>
                     <div class="block__logo row">
-                        <a href="../content/bedroom.html" class="logo"><img src="../img/logo.webp" alt="logo"></a>
+                        <a href="./bedroom.html" class="logo"><img src="../img/logo.webp" alt="logo"></a>
                         <div class="nav-user row links contrast_font">
                             <a href="#" class="shortcut_heading nav-user__el">Избранное</a>
                             <a href="#" class="shortcut_heading nav-user__el">Корзина</a>
@@ -132,7 +134,7 @@
                     <div class="nav__mobile">
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-1.svg" alt="mobile-element" class="nav__mobile__el-img">Мягкая мебель</a>
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-2.svg" alt="mobile-element" class="nav__mobile__el-img">Для гостинной</a>
-                        <a href="../content/bedroom.html" class="nav__mobile__el"><img src="../img/mobile-3.svg" alt="mobile-element" class="nav__mobile__el-img">Для спальни</a>
+                        <a href="./bedroom.html" class="nav__mobile__el"><img src="../img/mobile-3.svg" alt="mobile-element" class="nav__mobile__el-img">Для спальни</a>
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-4.svg" alt="mobile-element" class="nav__mobile__el-img">Для детской</a>
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-5.svg" alt="mobile-element" class="nav__mobile__el-img">Для прихожей</a>
                         <a href="#" class="nav__mobile__el"><img src="../img/mobile-6.svg" alt="mobile-element" class="nav__mobile__el-img">Столы</a>
@@ -288,7 +290,7 @@
                 <h2 class="section__title">Другие товары этой серии</h2>
                 <div class="row">
                     <div class="col-25 col action__col">
-                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -308,7 +310,7 @@
                             </div>
                     </div>
                     <div class="col-25 col action__col">
-                        <img src="../img/action-two.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-two.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Тумба прикроватная Даниэлла (крем)</h3>
@@ -328,7 +330,7 @@
                         </div>
                     </div>
                     <div class="col-25 col action__col">
-                        <img src="../img/action-three.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-three.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Туалетный стол с зеркалом и пуф Даниэлла (крем)</h3>
@@ -348,7 +350,7 @@
                         </div>
                     </div>
                     <div class="col-25 col action__col">
-                        <img src="../img/action-four.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-four.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Шкаф 5-ти дверный Даниэлла (крем)</h3>
@@ -375,7 +377,7 @@
                     <!-- Slides -->
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -397,7 +399,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -419,7 +421,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -441,7 +443,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -463,7 +465,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -501,7 +503,7 @@
                 <h2 class="section__title">Просмотренные товары</h2>
                 <div class="row">
                     <div class="col-25 col action__col">
-                        <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -521,7 +523,7 @@
                             </div>
                     </div>
                     <div class="col-25 col action__col">
-                        <img src="../img/action-two.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-two.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Тумба прикроватная Даниэлла (крем)</h3>
@@ -541,7 +543,7 @@
                         </div>
                     </div>
                     <div class="col-25 col action__col">
-                        <img src="../img/action-three.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-three.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Туалетный стол с зеркалом и пуф Даниэлла (крем)</h3>
@@ -561,7 +563,7 @@
                         </div>
                     </div>
                     <div class="col-25 col action__col">
-                        <img src="../img/action-four.webp" alt="action" class="action__col-img">
+                        <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-four.webp" alt="action" class="action__col-img"></a>
                         <div class="action__col-block">
                             <div class="action__col-heading">
                                 <h3 class="action__col-head">Шкаф 5-ти дверный Даниэлла (крем)</h3>
@@ -588,7 +590,7 @@
                     <!-- Slides -->
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -610,7 +612,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -632,7 +634,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -654,7 +656,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
@@ -676,7 +678,7 @@
                         </div>
                         <div class="swiper-slide action-slide">
                             <div class="col-25 col action__col">
-                                <img src="../img/action-one.webp" alt="action" class="action__col-img">
+                                <a href="./card.html" class="action__col-img" id="card-link"><img src="../img/action-one.webp" alt="action" class="action__col-img"></a>
                                 <div class="action__col-block">
                                     <div class="action__col-heading">
                                         <h3 class="action__col-head">Кровать Даниэлла (крем)</h3>
